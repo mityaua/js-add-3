@@ -12,6 +12,12 @@ const apartment = {
 };
 
 // Пиши код ниже этой строки
+apartment.price = 5000;
+apartment.rating = 4.7;
+apartment.owner.name = 'Генри Сибола';
+apartment.tags.push('trusted');
+
+console.log(apartment);
 
 // Дополни код обновив значения свойств объекта apartment:
 
