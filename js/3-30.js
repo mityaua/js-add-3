@@ -3,7 +3,7 @@ function makeTask(data) {
   const category = 'Общее';
   const priority = 'Обычный';
   // Пиши код ниже этой строки
-  let obj = { ...data };
+  const obj = { category, priority, ...data, completed };
 
   return console.log(obj);
   // Пиши код выше этой строки

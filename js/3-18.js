@@ -8,7 +8,7 @@ const products = [
 function getProductPrice(productName) {
   // Пиши код ниже этой строки
   for (const product of products) {
-    if (!productName === product.name) {
+    if (productName === product.name) {
       return product.price;
     }
   }

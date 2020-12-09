@@ -5,6 +5,7 @@ const products = [
   { name: 'Захват', price: 1200, quantity: 9 },
 ];
 
+// Первый вариант решения
 function getAllPropValues(propName) {
   // Пиши код ниже этой строки
   const arr = [];
@@ -20,6 +21,21 @@ function getAllPropValues(propName) {
   return arr;
   // Пиши код выше этой строки
 }
+
+// Второй вариант решения
+// function getAllPropValues(propName) {
+//   // Пиши код ниже этой строки
+//   const arr = [];
+
+//   for (const product of products) {
+//     if (product.hasOwnProperty(propName)) {
+//       arr.push(product[propName]);
+//     }
+//   }
+
+//   return arr;
+//   // Пиши код выше этой строки
+// }
 
 getAllPropValues('name'); // возвращает ['Радар', 'Сканер', 'Дроид', 'Захват'].
 getAllPropValues('quantity'); // возвращает [4, 3, 7, 9].
