@@ -5,7 +5,7 @@ function makeTask(data) {
   // Пиши код ниже этой строки
   const obj = { category, priority, ...data, completed };
 
-  return console.log(obj);
+  return obj;
   // Пиши код выше этой строки
 }
 

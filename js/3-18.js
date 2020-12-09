@@ -7,12 +7,13 @@ const products = [
 
 function getProductPrice(productName) {
   // Пиши код ниже этой строки
+  let total = null;
   for (const product of products) {
     if (productName === product.name) {
-      return product.price;
+      return (total = product.price);
     }
   }
-  return null;
+  return total;
   // Пиши код выше этой строки
 }
 
