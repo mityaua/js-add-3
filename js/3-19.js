@@ -9,6 +9,14 @@ function getAllPropValues(propName) {
   // Пиши код ниже этой строки
   const arr = [];
 
+  for (const product of products) {
+    const keys = Object.keys(product);
+
+    if (keys.includes(propName)) {
+      arr.push(product[propName]);
+    }
+  }
+
   return arr;
   // Пиши код выше этой строки
 }
