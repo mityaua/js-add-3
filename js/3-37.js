@@ -1,7 +1,7 @@
 const atTheOldToad = {
   // Пиши код ниже этой строки
   potions: ['Зелье скорости', 'Дыхание дракона', 'Каменная кожа'],
-  getPotions(potions) {
+  getPotions() {
     return this.potions;
   },
   // Пиши код выше этой строки
