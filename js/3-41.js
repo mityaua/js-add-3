@@ -4,10 +4,12 @@ const atTheOldToad = {
     { name: 'Дыхание дракона', price: 780 },
     { name: 'Каменная кожа', price: 520 },
   ],
+
   // Пиши код ниже этой строки
   getPotions() {
     return this.potions;
   },
+
   addPotion(potionName) {
     if (this.potions.includes(potionName)) {
       return `Зелье ${potionName} уже есть в инвентаре!`;
@@ -15,15 +17,17 @@ const atTheOldToad = {
 
     this.potions.push(potionName);
   },
+
   // Перебираем циклом массив potions и добавляем условие - если перебираемое имя равно параметру, тогда применяем сплайс
   removePotion(potionName) {
     for (let potion of this.potions) {
       const potionIndex = this.potions.indexOf(potion);
-      if (potion === potionName) {
+      if (potion.name === potionName) {
         this.potions.splice(potionIndex, 1);
       }
     }
   },
+
   // Перебираем циклом potions и добавляем условие - если имя свойства равно параметру старому имени, тогда присваиваем новое имя
   updatePotionName(oldName, newName) {
     for (let potion of this.potions) {
